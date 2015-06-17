@@ -1,4 +1,19 @@
+/*
+
+Colours - Shaded light to dark 
+
+1 - F2F2F2 - Background
+2 - D9D2D0 - Off-shade background
+3 - BFB3AE - ?
+4 - 8C807B - Link hover
+5 - 736965 - Link default
+6 - 534C49 - 'Black'
+
+*/
+
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+@import url(http://fonts.googleapis.com/css?family=Hind:300,400,500);
 
 html {
     color: #222;
@@ -7,13 +22,15 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #BFB3AE;
     text-shadow: none;
+    color: #F2F2F2;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #BFB3AE;
     text-shadow: none;
+    color: #F2F2F2;
 }
 
 hr {
@@ -57,35 +74,12 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px 'Hind', Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
     width: 90%;
     margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
 }
 
 /* ==============
@@ -128,10 +122,6 @@ nav a:hover {
     padding: 30px 0;
 }
 
-.main article h1 {
-    font-size: 2em;
-}
-
 .main aside {
     color: white;
     padding: 0px 5% 10px;
@@ -146,13 +136,41 @@ nav a:hover {
     ALL: IE Fixes
    =============== */
 
-.ie7 .title {
+.ie7 h1 {
     padding-top: 20px;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+a { color: #BFB3AE; text-decoration: none; }
+a:hover { color: #8C807B; }
+
+h1 { font-size: 1.8em; font-weight: 500; text-transform: uppercase; letter-spacing: -1px; color: #534C49; position: fixed; top: .5em; left: 1em; }
+h1 small { font-size: .7em; font-weight: 300; color: #BFB3AE; text-transform: none; letter-spacing: normal; }
+
+h2 { color: #534C49; font-size: 4em; line-height: 1em; text-transform: uppercase; }
+
+hr { height: 15px; width: 60px; background: #534C49; float: right }
+
+
+header { width: 100%; float: left; }
+header ul { float: right; margin: 2em; }
+header ul li { list-style: none; }
+
+article { width: 60%; float: right; padding-right: 1.5em; text-align: right; margin-top: 20em; clear: both; }
+
+
+
+
+
+
+footer a { text-transform: uppercase; font-size: .9em; font-weight: 500; position: fixed; bottom: .5em; left: 1em; }
+
+
+
+
 
 
 
@@ -209,24 +227,9 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
 /* ============
     WIDE: Menu
    ============ */
-
-    .title {
-        float: left;
-    }
 
     nav {
         float: right;
@@ -307,6 +310,14 @@ nav a:hover {
 .clearfix {
     *zoom: 1;
 }
+
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+   a { -webkit-transition: color 0.2s linear; -moz-transition: color 0.2s linear; -ms-transition: color 0.2s linear; -o-transition: color 0.2s linear; transition: color 0.2s linear; }
+   a:hover { -webkit-transition: color 0.2s linear; -moz-transition: color 0.2s linear; -ms-transition: color 0.2s linear; -o-transition: color 0.2s linear; transition: color 0.2s linear; }
 
 /* ==========================================================================
    Print styles
